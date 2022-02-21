@@ -23,6 +23,7 @@
 		AB24EEDB27C232ED0098491E /* nssl0043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB24EED127C232ED0098491E /* nssl0043.jpg */; };
 		AB24EEDC27C232ED0098491E /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB24EED227C232ED0098491E /* nssl0033.jpg */; };
 		AB24EEDD27C232ED0098491E /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB24EED327C232ED0098491E /* nssl0034.jpg */; };
+		AB24EEDF27C36ACF0098491E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24EEDE27C36ACF0098491E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AB24EED127C232ED0098491E /* nssl0043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0043.jpg; sourceTree = "<group>"; };
 		AB24EED227C232ED0098491E /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		AB24EED327C232ED0098491E /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
+		AB24EEDE27C36ACF0098491E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				AB24EEB527C224470098491E /* AppDelegate.swift */,
 				AB24EEB727C224470098491E /* SceneDelegate.swift */,
 				AB24EEB927C224470098491E /* ViewController.swift */,
+				AB24EEDE27C36ACF0098491E /* DetailViewController.swift */,
 				AB24EEBB27C224470098491E /* Main.storyboard */,
 				AB24EEBE27C224480098491E /* Assets.xcassets */,
 				AB24EEC027C224480098491E /* LaunchScreen.storyboard */,
@@ -189,6 +192,7 @@
 				AB24EEBA27C224470098491E /* ViewController.swift in Sources */,
 				AB24EEB627C224470098491E /* AppDelegate.swift in Sources */,
 				AB24EEB827C224470098491E /* SceneDelegate.swift in Sources */,
+				AB24EEDF27C36ACF0098491E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DHV9W22P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FileManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FileManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tubanuryasa.FileManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,6 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25DHV9W22P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FileManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FileManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tubanuryasa.FileManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
