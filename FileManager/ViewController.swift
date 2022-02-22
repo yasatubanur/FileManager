@@ -30,12 +30,16 @@ class ViewController: UITableViewController {
         print(pictures)
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for:indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
         cell.textLabel?.text = pictures[indexPath.row]
         return cell
     }
