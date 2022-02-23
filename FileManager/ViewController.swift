@@ -16,6 +16,9 @@ class ViewController: UITableViewController {
         title = "Storm Viewer"
         
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share your friend", style: .plain, target: self, action: #selector(suggest))
+        
+       
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -54,6 +57,11 @@ class ViewController: UITableViewController {
         }
     }
 
-
+    @objc func suggest(){
+        let sharelink = "https://github.com/yasatubanur"
+        let vc = UIActivityViewController(activityItems: [sharelink], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc,animated: true)
+    }
 }
 
