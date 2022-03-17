@@ -12,28 +12,29 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         title = "Storm Viewer"
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share your friend", style: .plain, target: self, action: #selector(suggest))
         
-       
+        performSelector(inBackground: #selector(loadImages), with: nil)
         
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let items = try! fm.contentsOfDirectory(atPath: path)
+        tableView.reloadData()
         
-        for item in items {
-            if item.hasPrefix("nssl"){
-                //this is a picture to load!
-                pictures.append(item)
-                
-            }
-        }
-        pictures.sort()
-        print(pictures)
     }
+        @objc func loadImages(){
+            let fm = FileManager.default
+            let path = Bundle.main.resourcePath!
+            let items = try! fm.contentsOfDirectory(atPath: path)
+          
+            for item in items {
+                if item.hasPrefix("nssl"){
+                    pictures.append(item)
+                }
+            }
+            pictures.sort()
+        }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
